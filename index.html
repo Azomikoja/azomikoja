@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azomikoja :D</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #6A4C93, #4E73B5, #3A8D9C); 
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            min-height: 100vh;
+            background-size: 300% 300%;
+            animation: gradientBG 10s ease infinite;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        h1, h2, h3, p {
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.25); 
+        }
+
+        header {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: rgba(0, 0, 0, 0.5); 
+            color: #fff;
+            border-bottom: 5px solid #FF9F80;
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out 0.5s forwards; 
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin-bottom: 20px;
+            text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 0;
+            text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+            transition: transform 0.5s ease, box-shadow 0.5s ease; 
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out 1s forwards; 
+        }
+
+        section:hover {
+            transform: scale(1.05); 
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); 
+        }
+
+        .about, .blog {
+            background-color: rgba(255, 255, 255, 0.8); 
+            border-radius: 12px;
+            padding: 30px;
+            margin: 30px auto;
+            max-width: 900px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .about h2, .blog h2 {
+            font-size: 2.5em;
+            color: #4E73B5;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out 1.5s forwards; 
+        }
+
+        .about p, .blog p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .blog .post {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .blog .post h3 {
+            color: #FF9F80;
+            font-size: 1.8em;
+            text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .blog .post p {
+            font-size: 1em;
+            color: #333;
+        }
+
+        .blog .post:hover {
+            transform: translateY(-10px); 
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2); 
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            border-top: 5px solid #FF9F80;
+            box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3); 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Hey! I'm Azomikoja.</h1>
+        <p>Just a small website made for fun because I was bored :P</p>
+    </header>
+
+    <section class="about">
+        <h2>About Me</h2>
+        <p>I'm called Bastien, I love Computer Science and Math. I also like playing video games and having fun!</p>
+    </section>
+
+    <section class="blog">
+        <h2>What am I doing ?</h2>
+
+        <div class="post">
+            <h3>January 2025 - Start of the year</h3>
+            <p>This year, I'm focusing even more on my weight lost and spending time with the people I like and doing what I love</p>
+        </div>
+
+        <div class="post">
+            <h3>December 2024 - Winter Vibes</h3>
+            <p>The winter months are always so cozy. I've been walking and going outside in general.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>2025 Azomikoja | Website SRC: https://github.com/Azomikoja/azomikoja</p>
+    </footer>
+
+</body>
+</html>
